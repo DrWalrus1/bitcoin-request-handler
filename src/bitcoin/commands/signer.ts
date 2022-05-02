@@ -1,5 +1,5 @@
 import BaseCommand from "./base-command";
 
-export class SignerCommands extends BaseCommand {
+export default class SignerCommands extends BaseCommand {
     
 }

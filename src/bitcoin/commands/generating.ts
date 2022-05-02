@@ -1,5 +1,5 @@
 import BaseCommand from "./base-command";
 
-export class GeneratingCommands extends BaseCommand {
+export default class GeneratingCommands extends BaseCommand {
     
 }

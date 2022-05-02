@@ -1,5 +1,5 @@
 import BaseCommand from "./base-command";
 
-export class ZmqCommands extends BaseCommand {
+export default class ZmqCommands extends BaseCommand {
     
 }

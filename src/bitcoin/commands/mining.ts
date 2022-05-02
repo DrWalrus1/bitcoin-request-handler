@@ -1,5 +1,5 @@
 import BaseCommand from "./base-command";
 
-export class MiningCommands extends BaseCommand {
+export default class MiningCommands extends BaseCommand {
     
 }

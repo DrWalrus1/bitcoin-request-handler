@@ -1,5 +1,5 @@
 import BaseCommand from "./base-command";
 
-export class UtilityCommands extends BaseCommand {
+export default class UtilityCommands extends BaseCommand {
     
 }

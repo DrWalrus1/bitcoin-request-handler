@@ -1,5 +1,5 @@
 import BaseCommand from "./base-command";
 
-export class NetworkCommands extends BaseCommand {
+export default class NetworkCommands extends BaseCommand {
     
 }
