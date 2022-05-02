@@ -1,6 +1,9 @@
+import BaseCommand from "./base-command";
+
+
 type Verbosity = 0 | 1 | 2;
 
-export default class BlockchainCommands {
+export default class BlockchainCommands extends BaseCommand {
     /**
      * Returns the hash of the best (tip) block in the most-work fully-validated chain.
      */
@@ -8,5 +11,5 @@ export default class BlockchainCommands {
         return "hello";
     }
 
-    getBlock(hash: string, verbosity: Verbosity) {}
+    getBlock(hash: string, verbosity?: Verbosity) {}
 }

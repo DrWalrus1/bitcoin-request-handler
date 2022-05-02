@@ -1,6 +1,6 @@
+import BaseCommand from "./base-command";
 
-
-export default class WalletCommands {
+export default class WalletCommands extends BaseCommand {
     
     /**
      * Abandons the Transaction
