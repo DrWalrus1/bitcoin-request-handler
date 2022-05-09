@@ -1,15 +1,15 @@
 import fetch from "node-fetch";
-import { RPCConfig } from "./rpc-config";
-import BlockchainCommands from "./commands/blockchain";
-import ControlCommands from "./commands/control";
-import GeneratingCommands from "./commands/generating";
-import MiningCommands from "./commands/mining";
-import NetworkCommands from "./commands/network";
-import SignerCommands from "./commands/signer";
-import TransactionCommands from "./commands/transactions";
-import UtilityCommands from "./commands/util";
-import WalletCommands from "./commands/wallet";
-import ZmqCommands from "./commands/zmq";
+import { RPCConfig } from "./rpc-config.js";
+import BlockchainCommands from "./commands/blockchain.js";
+import ControlCommands from "./commands/control.js";
+import GeneratingCommands from "./commands/generating.js";
+import MiningCommands from "./commands/mining.js";
+import NetworkCommands from "./commands/network.js";
+import SignerCommands from "./commands/signer.js";
+import TransactionCommands from "./commands/transactions.js";
+import UtilityCommands from "./commands/util.js";
+import WalletCommands from "./commands/wallet.js";
+import ZmqCommands from "./commands/zmq.js";
 
 export class Bitcoin {
     blockchain: BlockchainCommands

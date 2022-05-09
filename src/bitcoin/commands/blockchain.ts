@@ -1,4 +1,4 @@
-import BaseCommand from "./base-command";
+import BaseCommand from "./base-command.js";
 
 /**
   * If verbosity is 0, returns a string that is serialized, hex-encoded data for block ‘hash’.

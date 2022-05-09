@@ -1,4 +1,4 @@
-import BaseCommand from "./base-command";
+import BaseCommand from "./base-command.js";;
 
 export default class WalletCommands extends BaseCommand {
     
@@ -18,7 +18,12 @@ export default class WalletCommands extends BaseCommand {
     addmultisigaddress() {}
     backupwallet() {}
     bumpfee(transactionID: string, options: object) {}
-    createwallet() {}
+    
+
+    createwallet(walletName: string) {
+        this.sendRequest("createwallet", [walletName])
+    }
+
     dumpprivkey() {}
     dumpwallet() {}
     encryptwallet() {}
@@ -51,7 +56,15 @@ export default class WalletCommands extends BaseCommand {
     listunspent() {}
     listwalletdir() {}
     listwallets() {}
-    loadwallet() {}
+
+    /**
+     * 
+     * @param walletName {String} - Name of the wallet
+     */
+    loadwallet(walletName: string) {
+        this.sendRequest("loadwallet", [walletName]);
+    }
+    
     lockunspent() {}
     psbtbumpfee() {}
     removeprunedfunds() {}
