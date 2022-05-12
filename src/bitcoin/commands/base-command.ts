@@ -1,4 +1,5 @@
 import { RPCConfig } from "../rpc-config.js"
+export { RPCResponse } from "../rpc-response.js";
 import { v4 as uuidv4 } from "uuid";
 import fetch from "node-fetch";
 
@@ -9,7 +10,7 @@ export default class BaseCommand {
         this.config = config
     }
 
-    async sendRequest(method: string, parameters: Array<any>, path = "") {
+    async sendRequest(method: string, parameters?: Array<any>, path = "") {
         let id = uuidv4();
 
         let json = {
@@ -28,8 +29,6 @@ export default class BaseCommand {
             }
         })
 
-        const data = await response.json();
-
-        console.log(data);
+        return response.json();
     }
 }

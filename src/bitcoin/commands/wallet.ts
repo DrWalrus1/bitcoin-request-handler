@@ -55,6 +55,8 @@ export default class WalletCommands extends BaseCommand {
     listtransactions() {}
     listunspent() {}
     listwalletdir() {}
+
+    
     listwallets() {}
 
     /**
