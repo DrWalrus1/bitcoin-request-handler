@@ -3,7 +3,7 @@ export { RPCResponse } from "../rpc-response.js";
 import { v4 as uuidv4 } from "uuid";
 import fetch from "node-fetch";
 
-export default class BaseCommand {
+export abstract class BaseCommand {
     protected config: RPCConfig
 
     constructor(config: RPCConfig) {
@@ -31,4 +31,6 @@ export default class BaseCommand {
 
         return response.json();
     }
+
+    abstract handleResponse(response: unknown)
 }

@@ -11,4 +11,5 @@ export type RPCResponse = {
     }
     result?: string
     error: RPCError
+    warning?: string
 }
